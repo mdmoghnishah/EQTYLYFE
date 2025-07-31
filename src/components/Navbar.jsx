@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import Navlogo from '../assets/Navlogo.png';
+import Navlogo from '../assets/NavLogo.png';
 import { Link } from 'react-router-dom';
 import { RiArrowDropDownLine, RiMenu3Line, RiCloseLine } from 'react-icons/ri';
 
