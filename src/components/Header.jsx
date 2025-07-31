@@ -341,7 +341,7 @@ const Headder = () => {
                                     {/* Right Image (hidden on mobile) */}
                                     <div className="hidden md:block">
                                         <img
-                                            src={signup2}
+                                            src={signup}
                                             alt="Signup Illustration"
                                             className="h-[310px] w-auto object-contain"
                                         />
