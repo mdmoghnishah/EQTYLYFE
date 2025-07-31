@@ -15,6 +15,8 @@ import signup2 from '../assets/signup2.png';
 import FooterSection from './FooterSection';
 import tinyhouse from '../assets/tiny-house.png';
 
+
+
 const Home = () => {
     return (
         <>
@@ -44,6 +46,8 @@ const Home = () => {
                 <div className="w-full lg:w-[600px]">
                     <img src={tinyhouse} alt="House Illustration" className="w-full h-auto" />
                 </div>
+                
+
             </div>
             <div className="relative w-full max-w-[1562px] h-auto lg:h-[485px] mx-auto flex flex-col lg:flex-row justify-between items-center p-5 sm:p-10 lg:p-20 overflow-hidden">
                 {/* Background Image */}

@@ -54,7 +54,7 @@ const Headder = () => {
             <Navbar />
             <div className="w-full bg-white overflow-x-hidden">
 
-                <div className="relative w-full h-[724px] bg-[white] flex justify-center items-center ">
+                <div className="relative w-full min-h-[724px] bg-white flex flex-col items-center">
                     {/* Backgrounds */}
                     <img
                         src={vector6}
@@ -68,7 +68,7 @@ const Headder = () => {
                     />
 
                     {/* Top Section: Title + Subtext */}
-                    <div className="relative z-10 lg:absolute lg:top-[65px] lg:left-[213px] flex flex-col gap-2 items-center lg:items-start px-4 pt-8 lg:px-0 text-center lg:text-left">
+                    <div className="relative z-10 mt-12 lg:absolute lg:top-[25px] lg:left-[213px] flex flex-col gap-2 items-center lg:items-start px-4 lg:px-0 text-center lg:text-left">
                         <h1 className="text-4xl sm:text-5xl lg:text-[64px] leading-[100%] font-bold font-['IBM_Plex_Serif'] text-[#265CE1]">
                             How EQTY LYFE Works
                         </h1>
@@ -77,50 +77,50 @@ const Headder = () => {
                         </p>
                     </div>
 
-                    {/* Amico Image */}
-
                     {/* Content Section */}
-                    <div className="relative z-10 flex flex-col-reverse lg:flex-row justify-between w-full px-4 mt-12 lg:mt-0 lg:absolute lg:top-[300px] gap-10 lg:gap-0">
+                    <div className="relative z-10 flex flex-col-reverse lg:flex-row justify-between w-full px-4 mt-12 lg:mt-0 lg:absolute lg:top-[230px] gap-10 lg:gap-0">
                         {/* Left side - Before EQTY */}
-                        <div className="flex-1 flex flex-col items-center lg:items-start text-center lg:text-left lg:pl-[213px]">
-                            <div className="relative flex gap-2 items-center justify-center lg:justify-start">
+                        <div className="flex-1 flex flex-col items-center lg:items-start text-center lg:text-left lg:pl-[250px]">
+                            <div className="relative flex gap-2 items-center justify-center lg:justify-start mb-2">
                                 <img
                                     src={barChart}
                                     alt="Bar Chart"
-                                    className="w-[80px] sm:w-[100px] lg:w-[106px] h-auto rounded-md shadow z-10"
+                                    className="w-[80px] sm:w-[100px] lg:w-[106px] h-auto rounded-md z-10"
                                 />
                                 <img
                                     src={brokenCoin}
                                     alt="Broken Coin"
-                                    className="w-[40px] pt-[139px]  sm:w-[48px] h-auto z-10"
+                                    className="w-[40px] pt-[139px] sm:w-[48px] h-auto z-10"
                                 />
                             </div>
                             <h4 className="text-[#265CE1] font-extrabold text-xl mb-2">Before EQTY LYFE</h4>
-                            <p className="text-gray-700 text-base max-w-sm mb-4">
+                            <p className="text-base max-w-sm mb-4 font-inter text-[#6B7280] font-semibold">
                                 The traditional method of releasing your home equity typically involves either taking
                                 out a loan, which requires repayment with interest, or selling your entire home.
                             </p>
                         </div>
 
                         {/* Right side - After EQTY */}
-                        <div className="flex flex-col  items-center lg:items-start text-center lg:text-left lg:pl-8 lg:pr-[213px]">
-                            <img
-                                src={amico}
-                                alt="Amico"
-                                className=""
-                            />
-                            <h4 className="text-[#265CE1]  text-2xl font-extrabold mb-2">After EQTY LYFE</h4>
-                            <p className="text-base text-gray-800 max-w-sm mb-4">
+                        <div className="flex flex-col items-center lg:items-start text-center lg:text-left lg:pl-8 lg:pr-[250px]">
+                            <div className="mb-2 flex justify-center lg:justify-start w-full">
+                                <img
+                                    src={amico}
+                                    alt="Amico"
+                                    className="w-[300px] md:w-[360px] lg:w-[180px] h-auto"
+                                />
+                            </div>
+                            <h4 className="text-[#265CE1] text-2xl font-extrabold mb-2">After EQTY LYFE</h4>
+                            <p className="text-base text-[#6B7280] max-w-sm mb-4 font-semibold">
                                 With EQTY LYFE, you can now convert your home equity into a valuable resource by
                                 utilizing our various investment options.
                             </p>
 
                             {/* Input + Button */}
-                            <div className="flex flex-col sm:flex-row items-center sm:items-center gap-3 w-full max-w-sm">
+                            <div className="flex flex-col sm:flex-row items-center gap-3 w-full max-w-sm">
                                 <input
                                     type="text"
                                     placeholder="Enter Home Address"
-                                    className="w-full sm:w-[233px] h-10 px-3 border border-gray-400 rounded-md text-base"
+                                    className="w-full text-[#9AB6FC] sm:w-[233px] h-10 px-3 border border-gray-400 rounded-md text-base"
                                 />
                                 <button
                                     onClick={handleScroll}
@@ -132,6 +132,7 @@ const Headder = () => {
                         </div>
                     </div>
                 </div>
+
 
 
                 {/* ========== Layer 2: Our Solution Section ========== */}
@@ -220,7 +221,7 @@ const Headder = () => {
                             EQTY LYFE helps you liquidate your equity and turn it into cash to achieve your financial goals.
                         </div>
                     </div>
-                    
+
 
 
 
@@ -316,38 +317,38 @@ const Headder = () => {
 
                 {/* ========== Layer 4: sign in ========== */}
                 <div className="w-full flex justify-center mt-[90px] mb-[50px] px-4 z-10">
-                                <div className="w-full bg-[#265CE1] rounded-[10px] px-6 py-10 md:py-0 md:w-[926px] md:h-[253px] md:flex md:justify-between md:items-center md:px-[50px]">
-                                    {/* Left Content */}
-                                    <div className="flex flex-col gap-5 max-w-full md:max-w-[350px]">
-                                        <h2 className="text-white font-semibold text-[32px] md:text-[48px] tracking-[-0.012em] font-['IBM_Plex_Serif']">
-                                            Sign Up Today
-                                        </h2>
-                                        <p className="text-white text-sm md:text-base">
-                                            All it takes is a few simple steps to get your home to work for you.
-                                        </p>
-                
-                                        <div className="flex flex-col sm:flex-row gap-4">
-                                            <input
-                                                type="text"
-                                                placeholder="Enter Home Address"
-                                                className="w-full sm:w-[300px] h-[40px] rounded text-[14px] font-normal bg-white placeholder:text-[#9AB6FC] placeholder:text-[16px] pl-3"
-                                            />
-                                            <button className="text-[14px] w-full sm:w-[180px] text-[#265CE1] rounded font-medium bg-white px-2 py-2">
-                                                Get My Estimate
-                                            </button>
-                                        </div>
-                                    </div>
-                
-                                    {/* Right Image (hidden on mobile) */}
-                                    <div className="hidden md:block">
-                                        <img
-                                            src={signup}
-                                            alt="Signup Illustration"
-                                            className="h-[310px] w-auto object-contain"
-                                        />
-                                    </div>
-                                </div>
+                    <div className="w-full bg-[#265CE1] rounded-[10px] px-6 py-10 md:py-0 md:w-[926px] md:h-[253px] md:flex md:justify-between md:items-center md:px-[50px]">
+                        {/* Left Content */}
+                        <div className="flex flex-col gap-5 max-w-full md:max-w-[350px]">
+                            <h2 className="text-white font-semibold text-[32px] md:text-[48px] tracking-[-0.012em] font-['IBM_Plex_Serif']">
+                                Sign Up Today
+                            </h2>
+                            <p className="text-white text-sm md:text-base">
+                                All it takes is a few simple steps to get your home to work for you.
+                            </p>
+
+                            <div className="flex flex-col sm:flex-row gap-4">
+                                <input
+                                    type="text"
+                                    placeholder="Enter Home Address"
+                                    className="w-full sm:w-[300px] h-[40px] rounded text-[14px] font-normal bg-white placeholder:text-[#9AB6FC] placeholder:text-[16px] pl-3"
+                                />
+                                <button className="text-[14px] w-full sm:w-[180px] text-[#265CE1] rounded font-medium bg-white px-2 py-2">
+                                    Get My Estimate
+                                </button>
                             </div>
+                        </div>
+
+                        {/* Right Image (hidden on mobile) */}
+                        <div className="hidden md:block">
+                            <img
+                                src={signup}
+                                alt="Signup Illustration"
+                                className="h-[310px] w-auto object-contain"
+                            />
+                        </div>
+                    </div>
+                </div>
 
                 <FooterSection />
                 {/* <div className="bg-[#265CE1] w-full h-[292px] mt-[50px]">
