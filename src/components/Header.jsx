@@ -139,93 +139,91 @@ const Headder = () => {
                 <div
                     id="solution"
                     ref={solutionRef}
-                    className="relative w-full h-[524px] bg-[#EEF3FF] flex justify-center items-center"
+                    className="relative w-full bg-[#EEF3FF] flex justify-center items-center min-h-[524px] md:h-[524px] py-10"
                 >
-                    {/* Sun image inside this section */}
-                    {/* Sun Image */}
-                    <img
-                        src={Sun}
-                        alt="Sun"
-                        className="absolute top-[61px] right-[60px] w-[120px] sm:w-[148px] sm:h-[148px]"
-                    />
+                    {/* Mobile Responsive Container */}
+                    <div className="flex flex-col items-center justify-center w-full md:hidden gap-6 px-4">
+                        <img src={Sun} alt="Sun" className="w-[100px] sm:w-[120px]" />
 
-                    <div
-                        style={{
-                            width: "291px",
-                            height: "48px",
-                            position: "absolute",
-                            top: "54px",
-                            left: "213px",
-
-                            fontFamily: "'IBM Plex Serif', serif",
-                            fontWeight: 600,
-                            fontSize: "48px",
-                            lineHeight: "48px",
-                            letterSpacing: "-1.2%",
-                            color: "#265CE1",
-                            display: "flex",
-                            alignItems: "center",
-                            justifyContent: "center",
-                        }}
-                    >
-                        Our Solution
-                    </div>
-
-
-                    <img
-                        src={pana}
-                        alt="Descriptive Alt Text"
-                        className="absolute w-[383px] h-[301.9px] top-[222px] left-[373px] opacity-100 rotate-0"
-                    />
-                    <img
-                        src={vector}
-                        alt="Descriptive Alt"
-                        className="absolute w-[126px] h-[71px] top-[198px] left-[188px] opacity-100 "
-                    />
-                    <img
-                        src={vector}
-                        alt="Descriptive Alt"
-                        className="absolute w-[126px] h-[71px] top-[147px] left-[278px] opacity-100 "
-                    />
-                    <img
-                        src={cloudVector}
-                        alt="Descriptive Alt"
-                        className="absolute w-[126px] h-[71px] top-[174px] left-[247px] opacity-100 rotate180"
-                    />
-
-
-                    <img
-                        src={vector}
-                        alt="Descriptive Alt"
-                        className="absolute w-[126px] h-[71px] top-[161px] left-[790px] opacity-100 "
-                    />
-                    <img
-                        src={vector}
-                        alt="Descriptive Alt"
-                        className="absolute w-[126px] h-[71px] top-[218px] left-[1085px] opacity-100 "
-                    />
-
-                    <img
-                        src={whiteCloud}
-                        alt="Descriptive Alt"
-                        className="absolute w-[332px] h-[182px] top-[143px] left-[817px] opacity-100"
-                    />
-
-                    <div className="absolute top-[190px] left-[850px] flex flex-col items-center text-center z-10">
-                        <h2 className="w-[150px] h-[36px] text-[var(--Main-Color,#265CE1)] text-[28px] font-bold font-['IBM_Plex_Serif'] leading-[100%] flex items-center justify-center">
-                            Lump Sum
+                        <h2 className="text-3xl font-semibold text-[#265CE1] font-['IBM_Plex_Serif'] text-center">
+                            Our Solution
                         </h2>
 
-                        <div className="w-[225px] h-[75px] mt-2 text-[#265CE1] font-inter font-normal text-[12px] leading-[100%]">
-                            Many homeowners have untapped home value and worry about accessing their equity.
-                            EQTY LYFE helps you liquidate your equity and turn it into cash to achieve your financial goals.
+                        <img src={pana} alt="Descriptive Alt" className="w-[80%]" />
+                        <img src={cloudVector} alt="Cloud" className="w-[80%]" />
+                        <img src={vector} alt="Vector" className="w-[70%]" />
+                        <img src={whiteCloud} alt="White Cloud" className="w-[80%]" />
+
+                        <div className="flex flex-col items-center text-center">
+                            <h2 className="text-xl font-bold text-[#265CE1] font-['IBM_Plex_Serif'] mb-2">
+                                Lump Sum
+                            </h2>
+                            <p className="text-sm text-[#265CE1] font-inter max-w-[300px]">
+                                Many homeowners have untapped home value and worry about accessing their equity. EQTY LYFE helps you liquidate your equity and turn it into cash to achieve your financial goals.
+                            </p>
                         </div>
                     </div>
 
+                    {/* Desktop Version */}
+                    <div className="hidden md:flex w-full h-full items-center justify-center relative">
+                        <img
+                            src={Sun}
+                            alt="Sun"
+                            className="absolute top-[61px] right-[60px] w-[120px] sm:w-[148px] sm:h-[148px]"
+                        />
 
+                        <div className="absolute top-[54px] left-[213px] w-[291px] h-[48px] text-[48px] font-semibold leading-[48px] tracking-[-0.012em] text-[#265CE1] font-['IBM_Plex_Serif'] flex items-center justify-center">
+                            Our Solution
+                        </div>
 
+                        <img
+                            src={pana}
+                            alt="Descriptive Alt"
+                            className="absolute w-[383px] h-[259.9px] top-[222px] left-[373px]"
+                        />
+                        <img
+                            src={vector}
+                            alt="Vector"
+                            className="absolute w-[126px] h-[71px] top-[198px] left-[188px]"
+                        />
+                        <img
+                            src={vector}
+                            alt="Vector"
+                            className="absolute w-[126px] h-[71px] top-[147px] left-[278px]"
+                        />
+                        <img
+                            src={cloudVector}
+                            alt="Cloud"
+                            className="absolute w-[126px] h-[71px] top-[174px] left-[247px]  rotate-360"
+                        />
+                        <img
+                            src={vector}
+                            alt="Vector"
+                            className="absolute w-[126px] h-[71px] top-[161px] left-[790px]"
+                        />
+                        <img
+                            src={vector}
+                            alt="Vector"
+                            className="absolute w-[126px] h-[71px] top-[218px] left-[1085px]"
+                        />
+                        <img
+                            src={whiteCloud}
+                            alt="White Cloud"
+                            className="absolute  w-[332px] h-[182px] top-[143px] left-[817px]"
+                        />
 
+                        <div className="absolute top-[190px] left-[850px] flex flex-col items-center text-center z-10">
+                            <h2 className="w-[150px] h-[36px] text-[#265CE1] text-[28px] font-bold font-['IBM_Plex_Serif'] leading-[100%] flex items-center justify-center">
+                                Lump Sum
+                            </h2>
+                            <div className="w-[225px] h-[75px] mt-2 text-[#265CE1] font-inter font-normal text-[12px] leading-[100%]">
+                                Many homeowners have untapped home value and worry about accessing their equity.
+                                EQTY LYFE helps you liquidate your equity and turn it into cash to achieve your financial goals.
+                            </div>
+                        </div>
+                    </div>
                 </div>
+
 
                 {/* ========== Layer 3: EQTY LYFE Section Placeholder ========== */}
                 <div
