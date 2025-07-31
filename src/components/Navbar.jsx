@@ -10,10 +10,10 @@ const Navbar = () => {
         <nav className="w-full bg-white/80 backdrop-blur-md text-black py-4 px-6 shadow-md top-0 sticky z-100">
             <div className="max-w-[1200px] mx-auto flex justify-between items-center">
                 {/* Logo */}
-                <div className="flex items-center gap-2">
+                <Link to="/" className="flex items-center gap-2">
                     <img src={Navlogo} alt="Eqty Lyfe Logo" className="w-[40px] h-auto" />
                     <span className="text-xl font-bold font-inter text-[#265CE1]">EQTY LYFE</span>
-                </div>
+                </Link>
 
                 {/* Desktop Menu */}
                 <div className="hidden md:flex gap-6 font-inter text-sm font-medium">

@@ -17,6 +17,7 @@ function App() {
         {/* Default route for Home */}
         <Route path="/" element={<Home />} />
         <Route path="/why-eqtylyfe" element={<Headder/>} />
+        
       </Routes>
     </Router>
   )
