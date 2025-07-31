@@ -1,8 +1,8 @@
 import React, { useRef } from "react";
 import amico from "../assets/amico.png";
 import barChart from "../assets/barChart.png";
-import vector6 from "../assets/vector6.png";
-import vector4 from "../assets/vector4.png";
+import vector6 from "../assets/Vector6.png";
+import vector4 from "../assets/Vector4.png";
 import brokenCoin from "../assets/broken-coin.png";
 import Sun from "../assets/Sun.png";
 import pana from "../assets/pana.png";
