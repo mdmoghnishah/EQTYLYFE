@@ -46,33 +46,31 @@ const Home = () => {
                 </div>
             </div>
             <div className="relative w-full max-w-[1562px] h-auto lg:h-[485px] mx-auto flex flex-col lg:flex-row justify-between items-center p-5 sm:p-10 lg:p-20 overflow-hidden">
-    {/* Background Image */}
-    <img
-        src={Ellipse8}
-        alt=""
-        className="absolute top-[150px] left-[-100px] w-[1300px] opacity-100 z-0 pointer-events-none hidden lg:block"
-    />
+                {/* Background Image */}
+                <img
+                    src={Ellipse8}
+                    alt=""
+                    className="absolute top-[150px] left-[-100px] w-[1300px] opacity-100 z-0 pointer-events-none hidden lg:block"
+                />
 
-    {/* Image Section */}
-    <div className="relative z-10 mb-10 lg:mb-0">
-        <img src={coin} alt="" className="w-[300px] sm:w-[400px] lg:w-[500px]" />
-    </div>
+                {/* Image Section */}
+                <div className="relative z-10 mb-10 lg:mb-0">
+                    <img src={coin} alt="" className="w-[300px] sm:w-[400px] lg:w-[500px]" />
+                </div>
 
-    {/* Text Section */}
-    <div className="relative z-10 w-full lg:w-1/2 max-w-[500px] text-center lg:text-left px-4 sm:px-8 lg:pl-12">
-        <h2 className="font-inter font-bold text-[24px] sm:text-[32px] lg:text-[40px] text-[#265CE1] leading-snug">
-            EQTY LYFE’s Solution: Lump Sum
-        </h2>
-        <p className="mt-4 text-black text-sm sm:text-base leading-relaxed">
-            The EQTY LYFE LUM SUM product lets homeowners instantly convert home equity into cash without selling or taking on debt. As home values grow, homeowners can access their equity to fund expenses like debt repayment, home improvements, or personal needs. This simple solution offers financial flexibility while maintaining property ownership.
-        </p>
-        <button className="mt-5 h-[40px] text-white w-[200px] bg-[#265CE1] rounded">
-            Learn More
-        </button>
-    </div>
-</div>
-
-
+                {/* Text Section */}
+                <div className="relative z-10 w-full lg:w-1/2 max-w-[500px] text-center lg:text-left px-4 sm:px-8 lg:pl-12">
+                    <h2 className="font-inter font-bold text-[24px] sm:text-[32px] lg:text-[40px] text-[#265CE1] leading-snug">
+                        EQTY LYFE’s Solution: Lump Sum
+                    </h2>
+                    <p className="mt-4 text-black text-sm sm:text-base leading-relaxed">
+                        The EQTY LYFE LUM SUM product lets homeowners instantly convert home equity into cash without selling or taking on debt. As home values grow, homeowners can access their equity to fund expenses like debt repayment, home improvements, or personal needs. This simple solution offers financial flexibility while maintaining property ownership.
+                    </p>
+                    <button className="mt-5 h-[40px] text-white w-[200px] bg-[#265CE1] rounded">
+                        Learn More
+                    </button>
+                </div>
+            </div>
             <EquityStatsSection />
             <FinancialGoalSection />
             <HowItWorks />
