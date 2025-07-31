@@ -77,7 +77,7 @@ const FooterSection = () => {
   {/* Bottom Logo & Text */}
   <div className="flex flex-col items-center mt-10 gap-3 text-center">
     <div className="flex items-center gap-2">
-      <img src={logo} alt="EQTY LYFE Logo" className="w-[46px] h-[36px]" />
+      <img src="https://www.eqtylyfe.com/whiteLogo.svg" alt="EQTY LYFE Logo" className="w-[46px] h-[36px]" />
       <span className="text-[20px] font-semibold uppercase font-Inter">Eqty Lyfe</span>
     </div>
     <p className="text-[12px]">@EQTY LYFE 2025. All Rights Reserved.</p>

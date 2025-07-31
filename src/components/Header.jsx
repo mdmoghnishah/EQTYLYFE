@@ -268,7 +268,7 @@ const Headder = () => {
                                     {/* Image */}
                                     <div className="w-full sm:w-[250px] h-[200px] sm:h-[250px]">
                                         <img
-                                            src={idx === 0 ? amico1 : amico3}
+                                            src={idx === 0 ? "https://www.eqtylyfe.com/leverage/process1.svg" : "https://www.eqtylyfe.com/leverage/process3.svg"}
                                             alt={`EQTY LYFE Step ${idx + 1}`}
                                             className="w-full h-full object-contain"
                                         />
@@ -279,7 +279,7 @@ const Headder = () => {
                                     {/* Image */}
                                     <div className="w-full sm:w-[250px] h-[200px] sm:h-[250px]">
                                         <img
-                                            src={idx === 1 ? amico2 : rafiki}
+                                            src={idx === 1 ? "https://www.eqtylyfe.com/leverage/process2.svg" : "https://www.eqtylyfe.com/leverage/process4.svg"}
                                             alt={`EQTY LYFE Step ${idx + 1}`}
                                             className="w-full h-full object-contain"
                                         />

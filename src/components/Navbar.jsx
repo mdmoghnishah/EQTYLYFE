@@ -11,7 +11,7 @@ const Navbar = () => {
             <div className="max-w-[1200px] mx-auto flex justify-between items-center">
                 {/* Logo */}
                 <Link to="/" className="flex items-center gap-2">
-                    <img src={Navlogo} alt="Eqty Lyfe Logo" className="w-[40px] h-auto" />
+                    <img src="https://www.eqtylyfe.com/logo.svg" alt="Eqty Lyfe Logo" className="w-[40px] h-auto" />
                     <span className="text-xl font-bold font-inter text-[#265CE1]">EQTY LYFE</span>
                 </Link>
 

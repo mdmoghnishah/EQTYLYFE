@@ -59,7 +59,7 @@ const Home = () => {
 
                 {/* Image Section */}
                 <div className="relative z-10 mb-10 lg:mb-0">
-                    <img src={coin} alt="" className="w-[300px] sm:w-[400px] lg:w-[500px]" />
+                    <img src="https://www.eqtylyfe.com/lump-sum-illustration.svg" alt="" className="w-[300px] sm:w-[400px] lg:w-[500px]" />
                 </div>
 
                 {/* Text Section */}
@@ -104,7 +104,7 @@ const Home = () => {
                     {/* Right Image (hidden on mobile) */}
                     <div className="hidden md:block">
                         <img
-                            src={signup2}
+                            src="https://www.eqtylyfe.com/signup.svg"
                             alt="Signup Illustration"
                             className="h-[310px] w-auto object-contain"
                         />

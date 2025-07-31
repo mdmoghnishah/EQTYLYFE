@@ -43,7 +43,7 @@ const FinancialGoalSection = () => {
         {/* Right Illustration */}
         <div className="flex-1 flex flex-col items-center lg:items-end text-center lg:text-right">
           <img
-            src={Illustration}
+            src="https://www.eqtylyfe.com/why/fin1.svg"
             alt="Goal Illustration"
             className=" w-full max-w-xs sm:max-w-sm md:max-w-md"
           />
