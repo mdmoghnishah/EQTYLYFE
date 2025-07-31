@@ -74,38 +74,40 @@ const Home = () => {
             <EquityStatsSection />
             <FinancialGoalSection />
             <HowItWorks />
-            <div className="w-full bg-[#265CE1] rounded-[10px] mt-[200px] mb-[50px] px-6 py-10 md:py-0 md:mt-[200px] md:ml-[257px] md:w-[926px] md:h-[253px] md:flex md:justify-between md:items-center md:px-[50px] z-10">
+            <div className="w-full flex justify-center mt-[90px] mb-[50px] px-4 z-10">
+                <div className="w-full bg-[#265CE1] rounded-[10px] px-6 py-10 md:py-0 md:w-[926px] md:h-[253px] md:flex md:justify-between md:items-center md:px-[50px]">
+                    {/* Left Content */}
+                    <div className="flex flex-col gap-5 max-w-full md:max-w-[350px]">
+                        <h2 className="text-white font-semibold text-[32px] md:text-[48px] tracking-[-0.012em] font-['IBM_Plex_Serif']">
+                            Sign Up Today
+                        </h2>
+                        <p className="text-white text-sm md:text-base">
+                            All it takes is a few simple steps to get your home to work for you.
+                        </p>
 
-                {/* Left Content */}
-                <div className="flex flex-col gap-5 max-w-full md:max-w-[350px]">
-                    <h2 className="text-white font-semibold text-[32px] md:text-[48px] tracking-[-0.012em] font-['IBM_Plex_Serif']">
-                        Sign Up Today
-                    </h2>
-                    <p className="text-white text-sm md:text-base">
-                        All it takes is a few simple steps to get your home to work for you.
-                    </p>
+                        <div className="flex flex-col sm:flex-row gap-4">
+                            <input
+                                type="text"
+                                placeholder="Enter Home Address"
+                                className="w-full sm:w-[300px] h-[40px] rounded text-[14px] font-normal bg-white placeholder:text-[#9AB6FC] placeholder:text-[16px] pl-3"
+                            />
+                            <button className="text-[14px] w-full sm:w-[180px] text-[#265CE1] rounded font-medium bg-white px-2 py-2">
+                                Get My Estimate
+                            </button>
+                        </div>
+                    </div>
 
-                    <div className="flex flex-col sm:flex-row gap-4">
-                        <input
-                            type="text"
-                            placeholder="Enter Home Address"
-                            className="w-full sm:w-[300px] h-[40px] rounded text-[14px] font-normal bg-white placeholder:text-[#9AB6FC] placeholder:text-[16px] pl-3"
+                    {/* Right Image (hidden on mobile) */}
+                    <div className="hidden md:block">
+                        <img
+                            src={signup2}
+                            alt="Signup Illustration"
+                            className="h-[310px] w-auto object-contain"
                         />
-                        <button className="text-[14px] w-full sm:w-[180px] text-[#265CE1] rounded font-medium bg-white px-2 py-2">
-                            Get My Estimate
-                        </button>
                     </div>
                 </div>
-
-                {/* Right Image (hidden on mobile) */}
-                <div className="hidden md:block">
-                    <img
-                        src={signup2}
-                        alt="Signup Illustration"
-                        className="h-[310px] w-auto object-contain"
-                    />
-                </div>
             </div>
+
             <FooterSection />
 
 
