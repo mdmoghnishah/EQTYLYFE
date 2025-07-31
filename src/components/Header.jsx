@@ -6,7 +6,7 @@ import vector4 from "../assets/Vector4.png";
 import brokenCoin from "../assets/broken-coin.png";
 import Sun from "../assets/Sun.png";
 import pana from "../assets/pana.png";
-import vector from "../assets/vector.png";
+import vector from "../assets/Vector.png";
 import cloudVector from "../assets/cloudVector.png";
 import whiteCloud from "../assets/whiteCloud.png";
 import amico1 from "../assets/amico1.png";
