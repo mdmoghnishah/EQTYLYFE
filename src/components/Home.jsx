@@ -12,7 +12,7 @@ import EquityStatsSection from './Stacks';
 import FinancialGoalSection from './FinacialGoal';
 import HowItWorks from './Worklyfe';
 import signup2 from '../assets/signup2.png';
-import FooterSection from './footerSection';
+import FooterSection from './FooterSection';
 
 const Home = () => {
     return (

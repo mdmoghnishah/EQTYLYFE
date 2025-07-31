@@ -13,7 +13,7 @@ import amico1 from "../assets/amico1.png";
 import amico2 from "../assets/amico2.png";
 import amico3 from "../assets/amico3.png";
 import rafiki from "../assets/rafiki.png";
-import FooterSection from "./footerSection";
+import FooterSection from "./FooterSection";
 import signup from "../assets/sign-up.png";
 import Navbar from "./Navbar";
 
