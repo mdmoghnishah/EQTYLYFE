@@ -13,13 +13,13 @@ import FinancialGoalSection from './FinacialGoal';
 import HowItWorks from './Worklyfe';
 import signup2 from '../assets/signup2.png';
 import FooterSection from './FooterSection';
-import tinyhome from '../assets/tiny-house.png';
+import tinyhouse from '../assets/tiny-house.png';
 
 const Home = () => {
     return (
         <>
             <Navbar />
-           <div className="w-full px-6 py-12 flex flex-col lg:flex-row items-center justify-between gap-10 max-w-[1400px] mx-auto">
+            <div className="w-full px-6 py-12 flex flex-col lg:flex-row items-center justify-between gap-10 max-w-[1400px] mx-auto">
       {/* Text Left Section */}
       <div className="max-w-xl space-y-6">
         <h1 className="text-[32px] lg:text-[40px] font-[IBM Plex Serif] font-semibold text-[#265CE1]">
@@ -42,9 +42,34 @@ const Home = () => {
 
       {/* Single Image Right */}
       <div className="w-full lg:w-[600px]">
-        <img src={tinyhome} alt="House Illustration" className="w-full h-auto" />
+        <img src={tinyhouse} alt="House Illustration" className="w-full h-auto" />
       </div>
     </div>
+            <div className="relative w-[1562px] h-[485px] ml-[50px] flex justify-between items-center p-20 overflow-hidden">
+                {/* Background Image */}
+                <img
+                    src={Ellipse8}
+                    alt=""
+                    className="absolute top-[150px] left-[-100px] w-[1300px] opacity-100 z-0 pointer-events-none"
+                />
+
+                {/* Content */}
+                <div className="relative z-10">
+                    <img src={coin} alt="" className="w-[500px] mb-20" />
+                </div>
+
+                <div className="w-[400px] h-[400px] relative mr-100 z-10">
+                    <h2 className="w-full font-inter font-bold text-[40px] text-[#265CE1]">
+                        EQTY LYFE’s Solution: Lump Sum
+                    </h2>
+                    <p className="mt-4 text-black">
+                        The EQTY LYFE LUM SUM product lets homeowners instantly convert home equity into cash without selling or taking on debt. As home values grow, homeowners can access their equity to fund expenses like debt repayment, home improvements, or personal needs. This simple solution offers financial flexibility while maintaining property ownership.
+                    </p>
+                    <button className="mt-5 h-[40px] text-white w-[200px] bg-[#265CE1] rounded">
+                        Learn More
+                    </button>
+                </div>
+            </div>
             <EquityStatsSection />
             <FinancialGoalSection />
             <HowItWorks />
