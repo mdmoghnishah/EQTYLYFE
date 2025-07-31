@@ -11,13 +11,14 @@ const EquityStatsSection = () => {
   {/* Top Row */}
   <div className="flex flex-col lg:flex-row justify-center items-center gap-6 mb-10">
     {/* Left Card */}
-    <div className="bg-white text-black rounded-lg shadow-lg p-6 w-full sm:max-w-md min-h-[200px]">
-      <p className="text-base leading-relaxed text-center sm:text-left">
-        Homeowners with mortgages, representing{' '}
-        <span className="text-[#265CE1] font-semibold">62%</span> of all U.S. properties, have seen a remarkable{' '}
-        <span className="text-[#265CE1] font-bold">$1.5 trillion increase</span> in equity since early 2023.
-      </p>
-    </div>
+    <div className="bg-white text-black rounded-lg shadow-lg p-6 w-full sm:max-w-md min-h-[200px] flex items-center justify-center">
+  <p className="text-base sm:text-lg leading-relaxed text-center sm:text-left w-full">
+    Homeowners with mortgages, representing{' '}
+    <span className="text-[#265CE1] font-semibold">62%</span> of all U.S. properties,
+    have seen a remarkable{' '}
+    <span className="text-[#265CE1] font-bold">$1.5 trillion increase</span> in equity since early 2023.
+  </p>
+</div>
 
     {/* Right Card */}
     <div className="bg-white text-black rounded-lg shadow-lg p-6 w-full sm:max-w-md flex flex-col justify-between min-h-[250px]">
@@ -60,7 +61,7 @@ const EquityStatsSection = () => {
   </div>
 
   {/* Bottom Row */}
-  <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 max-w-4xl mx-auto">
+  <div className="grid grid-cols-1  sm:grid-cols-2 gap-6 max-w-4xl mx-auto">
     {/* Stat 1 */}
     <div className="bg-white text-black rounded-lg shadow-lg p-6 text-center min-h-[180px]">
       <div className="text-green-600 text-3xl sm:text-4xl font-bold mb-1">$ 0k</div>
