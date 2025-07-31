@@ -13,95 +13,38 @@ import FinancialGoalSection from './FinacialGoal';
 import HowItWorks from './Worklyfe';
 import signup2 from '../assets/signup2.png';
 import FooterSection from './FooterSection';
+import tinyhome from '../assets/tiny-house.png';
 
 const Home = () => {
     return (
         <>
             <Navbar />
-            <div class="w-[1222px] h-[385px] mt-[117px] ">
-                <div class="w-[369px] h-[329px] mt-[198px] ml-[225px]">
-                    <h1 class="w-full text-[40px] size-25 font-[IBM Plex Serif] font-semibold  tracking-normal leading-none text-[#265CE1]">Put your Home Equity to Work</h1>
-                    <p class="w-full leading-none size-18 font-inter tracking-normal text-l">Achieve financial freedom through your home equity—no debt, no interest, no monthly payments, just opportunity</p>
-                    <div class="w-[384px] h-[40px] gap-8 ">
-                        <input type="email"
-                            placeholder="Enter Home Address"
-                            class="w-[200px] h-[40px] opacity-100 border  border-[#D1D5DB] rounded-[6px] pt-2 pr-[56px] pb-2 pl-3" />
-                        <button class="bg-[#265CE1] text-white w-[163px] h-[40px] opacity-100 gap-[10px] rounded-[6px]  px-4 py-2 ">Get my Estimation</button>
-                    </div>
-                    <div className="absolute w-[667.92px] h-[485.10px] top-[117px] left-[750px] opacity-100">
-                        <div className="relative w-full h-full">
+           <div className="w-full px-6 py-12 flex flex-col lg:flex-row items-center justify-between gap-10 max-w-[1400px] mx-auto">
+      {/* Text Left Section */}
+      <div className="max-w-xl space-y-6">
+        <h1 className="text-[32px] lg:text-[40px] font-[IBM Plex Serif] font-semibold text-[#265CE1]">
+          Put your Home Equity to Work
+        </h1>
+        <p className="text-base font-inter text-gray-800">
+          Achieve financial freedom through your home equity—no debt, no interest, no monthly payments, just opportunity.
+        </p>
+        <div className="flex flex-col sm:flex-row items-center gap-4">
+          <input
+            type="email"
+            placeholder="Enter Home Address"
+            className="w-[260px] h-[40px] border border-[#D1D5DB] rounded-md px-3 text-sm"
+          />
+          <button className="bg-[#265CE1] text-white w-[180px] h-[40px] rounded-md text-sm">
+            Get my Estimation
+          </button>
+        </div>
+      </div>
 
-                            {/* Sun or Ellipse - Top left */}
-                            <img
-                                src={Ellipse}
-                                alt="Sun"
-                                className="absolute top-[70px] left-[-10px] w-[50px] z-0"
-                            />
-
-                            {/* Clouds - Top area */}
-                            <img
-                                src={Clouds}
-                                alt="Clouds"
-                                className="absolute top-20 left-[130px] w-[400px] z-0"
-                            />
-
-                            {/* Birds - Top Right */}
-                            <img
-                                src={Birds}
-                                alt="Birds"
-                                className="absolute top-[90px] right-[140px] w-[400px] z-10"
-                            />
-
-                            {/* Hand - Base layer */}
-                            <img
-                                src={Hand}
-                                alt="Hand"
-                                className="absolute bottom-0 right-0 w-[630.71px] h-[184.65px] z-60"
-                            />
-
-                            {/* House - Centered above the hand */}
-                            <img
-                                src={House}
-                                alt="House"
-                                className="absolute bottom-[110px] left-[185px] w-[296.88px] h-[254.05px] z-10"
-                            />
-
-                            {/* Plants - Around house */}
-                            <img
-                                src={Plants}
-                                alt="Plants"
-                                className="absolute bottom-[105px] left-[140px] w-[400px] z-0"
-                            />
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div className="relative w-[1562px] h-[485px] ml-[50px] flex justify-between items-center p-20 overflow-hidden">
-                {/* Background Image */}
-                <img
-                    src={Ellipse8}
-                    alt=""
-                    className="absolute top-[150px] left-[-100px] w-[1300px] opacity-100 z-0 pointer-events-none"
-                />
-
-                {/* Content */}
-                <div className="relative z-10">
-                    <img src={coin} alt="" className="w-[500px] mb-20" />
-                </div>
-
-                <div className="w-[400px] h-[400px] relative mr-100 z-10">
-                    <h2 className="w-full font-inter font-bold text-[40px] text-[#265CE1]">
-                        EQTY LYFE’s Solution: Lump Sum
-                    </h2>
-                    <p className="mt-4 text-black">
-                        The EQTY LYFE LUM SUM product lets homeowners instantly convert home equity into cash without selling or taking on debt. As home values grow, homeowners can access their equity to fund expenses like debt repayment, home improvements, or personal needs. This simple solution offers financial flexibility while maintaining property ownership.
-                    </p>
-                    <button className="mt-5 h-[40px] text-white w-[200px] bg-[#265CE1] rounded">
-                        Learn More
-                    </button>
-                </div>
-            </div>
+      {/* Single Image Right */}
+      <div className="w-full lg:w-[600px]">
+        <img src={tinyhome} alt="House Illustration" className="w-full h-auto" />
+      </div>
+    </div>
             <EquityStatsSection />
             <FinancialGoalSection />
             <HowItWorks />
